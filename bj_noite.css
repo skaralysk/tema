@@ -394,19 +394,15 @@ ul.thin li {
 #userinfo {
     background: rgba(0, 0, 0, 0.19);
     backdrop-filter: blur(15.05px);
-    -webkit-backdrop-filter: blur(19.05px); 
-    -webkit-mask-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 0%,
-        #000 50%,
-        rgba(0, 0, 0, 0) 100%
-    );
-    mask-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 0%,
-        #000 50%,
-        rgba(0, 0, 0, 0) 100%
-    );
+    -webkit-backdrop-filter: blur(19.05px);
+    -webkit-mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 0%,
+            #000 50%,
+            rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 0%,
+            #000 50%,
+            rgba(0, 0, 0, 0) 100%);
     color: #fd0000;
     width: 100%;
     text-align: center;
@@ -576,7 +572,7 @@ ul.thin li {
 .alertbar {
     /background-color: #FFF;
     text-align: center;
-    color: #444;
+    color: #e5e5e5;
     font-weight: 700;
     font-size: .93em;
     width: 410px;
@@ -1431,11 +1427,11 @@ table.shoutTable a {
 }
 
 tr.row1 {
-    background-color: #EAE6F9;
+    background-color: #334168;
 }
 
 tr.row2 {
-    background-color: #FFFFFF;
+    background-color: #334168;
 }
 
 button,
