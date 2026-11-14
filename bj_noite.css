@@ -685,7 +685,7 @@ p.min_padding {
 
 .box2 {
     font-size: 8.69pt;
-    background-color: #fff;
+    /*background-color: #fff;*/
     border: 1px solid #CACACA;
     margin-bottom: 10px;
 }
@@ -797,7 +797,7 @@ th {
 .colhead {
     background: #AFAFFF;
     font-weight: 700;
-    color: #555;
+    color: #fff;
     border-bottom: 1px solid #000;
 
 }
@@ -838,7 +838,7 @@ td.colhead {
 
 .colhead_dark {
     background-color: #A5FCC5;
-    color: #333;
+    color: #ff8300;
     vertical-align: middle;
     box-shadow: 0px 0px 3px #ddd;
 
@@ -1442,7 +1442,7 @@ input[type=submit] {
     cursor: pointer;
     outline: 0;
     transition: all 0.2s ease;
-    background: linear-gradient(180deg, #A4A4EC 0%, #8AB0F4 100%);
+    background: linear-gradient(180deg, #B64B2B 0%, #FF8300 100%);
     color: white;
     border: none;
     border-radius: 25px;
