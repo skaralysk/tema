@@ -753,7 +753,7 @@ tr.resolution_header {
 
 tr.season_header,
 td.season_header {
-    background: url(https://bj-share.info/static/styles/bj-test/images/menu.png) repeat scroll 0 #bbb !important;
+    background: url(https://bj-share.info/static/styles/bj-test/images/menu.png) repeat scroll 0 #ffb471 !important;
 }
 
 tr {
@@ -772,7 +772,7 @@ th {
     border: 1px solid #CACACA;
     padding: 5px;
     text-align: left;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
 
 }
 
@@ -819,7 +819,7 @@ td.colhead {
 }
 
 .colhead_dark {
-    background-color: #9E7BFF;
+    background: linear-gradient(to right, #6A4FD6, #9E7BFF);
     color: #333;
     vertical-align: middle;
     box-shadow: 0px 0px 3px #ddd;
