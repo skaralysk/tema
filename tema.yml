@@ -1,0 +1,44 @@
+name: Trocar tema dia/noite
+
+on:
+  schedule:
+    - cron: '0 21 * * *'   # 18h em Brasilia (UTC-3): vira noite
+    - cron: '0 9 * * *'    # 06h em Brasilia (UTC-3): vira dia
+  workflow_dispatch:       # permite rodar manualmente pelo botao "Run workflow"
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  trocar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositorio
+        uses: actions/checkout@v4
+
+      - name: Escolher e aplicar o tema
+        run: |
+          # Decide pela hora real de Brasilia, entao um atraso do agendador nao atrapalha
+          HORA=$(TZ=America/Sao_Paulo date +%H)
+          if [ "$HORA" -ge 18 ] || [ "$HORA" -lt 6 ]; then
+            TEMA=noite
+          else
+            TEMA=dia
+          fi
+          echo "Hora em Brasilia: $HORA -> tema $TEMA"
+          cp "bj_${TEMA}.css" bj_offwhite.css
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add bj_offwhite.css
+          if git diff --cached --quiet; then
+            echo "Tema ja estava correto, nada a fazer."
+          else
+            git commit -m "Tema: $TEMA"
+            git push
+          fi
+
+      - name: Forcar publicacao do GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
