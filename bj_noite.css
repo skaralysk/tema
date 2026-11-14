@@ -2,10 +2,12 @@ body {
     font-size: 11.5px;
     color: #cab5f0;
     min-width: 950px;
-    background-color: #ffb471;
     font-family: Roboto, tahoma, helvetica, sans-serif;
     overflow-wrap: break-word;
-    background: url('https://i.imgur.com/E0Bo4OB.jpeg') no-repeat top center;
+    background-color: #334168;
+    background-image: url('https://i.imgur.com/E0Bo4OB.jpeg');
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 a {
@@ -235,8 +237,7 @@ ul.thin li {
 #wrapper {
     width: 100%;
     margin: 0 auto;
-    background: #334168;
-    background: linear-gradient(0deg, rgba(51, 65, 104, 1) 80%, rgba(51, 65, 104, 1) 48%, rgba(51, 65, 104, 0) 66%);
+
 }
 
 #footer {
@@ -788,7 +789,8 @@ th {
     border: 1px solid #313B4900;
     padding: 5px;
     text-align: left;
-    border-radius: 5px;
+    /*! border-radius: 5px; */
+    background-color: #334168;
 
 }
 
@@ -1215,7 +1217,7 @@ tbody {
 blockquote {
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    background-color: rgba(230, 230, 230, 0.5);
+    background-color: rgb(44, 56, 91);
     border-bottom: 3px solid rgba(0, 0, 0, 0.10);
     border-left: 1px solid rgba(0, 0, 0, 0.10);
     border-right: 1px solid rgba(0, 0, 0, 0.10);
