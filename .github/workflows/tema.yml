@@ -1,10 +1,10 @@
 name: Trocar tema dia/noite
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 21 * * *'   # 18h em Brasilia (UTC-3): vira noite
-    - cron: '0 9 * * *'    # 06h em Brasilia (UTC-3): vira dia
-  workflow_dispatch:       # permite rodar manualmente pelo botao "Run workflow"
+    - cron: '0 21 * * *'
+    - cron: '0 9 * * *'
 
 permissions:
   contents: write
@@ -19,7 +19,6 @@ jobs:
 
       - name: Escolher e aplicar o tema
         run: |
-          # Decide pela hora real de Brasilia, entao um atraso do agendador nao atrapalha
           HORA=$(TZ=America/Sao_Paulo date +%H)
           if [ "$HORA" -ge 18 ] || [ "$HORA" -lt 6 ]; then
             TEMA=noite
