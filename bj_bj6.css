@@ -1,8 +1,0 @@
-/* Seletor automatico de tema.
-   Este arquivo mantem o link original e escolhe qual CSS carregar
-   conforme o modo do sistema do visitante (claro = dia, escuro = noite).
-   - Tema dia:   bj_dia.css
-   - Tema noite: bj_noite.css
-   Importante: os @import precisam ficar no topo do arquivo. */
-@import url("bj_dia.css") (prefers-color-scheme: light);
-@import url("bj_noite.css") (prefers-color-scheme: dark);
