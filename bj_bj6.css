@@ -5,7 +5,7 @@ body {
     background-color: #ffb471;
     font-family: Roboto, tahoma, helvetica, sans-serif;
     overflow-wrap: break-word;
-    background: url('https://i.imgur.com/Q6ywWl3.png') no-repeat top center;
+    background: #ffb471 url('https://i.imgur.com/GqnucRR.jpeg') no-repeat top center;
 }
 
 a {
@@ -235,9 +235,8 @@ ul.thin li {
 #wrapper {
     width: 100%;
     margin: 0 auto;
-    background: #FFB471;
-    background: #FFB471;
-    background: linear-gradient(0deg, rgba(255, 180, 113, 1) 70%, rgba(255, 180, 113, 1) 80%, rgba(255, 180, 113, 0) 86%);
+
+
 }
 
 #footer {
@@ -749,7 +748,7 @@ table {
 }
 
 tr.resolution_header {
-    background: url(https://bj-share.info/static/styles/bj-test/images/menu.png) repeat scroll 0 #bbb !important;
+    background: url(https://bj-share.info/static/styles/bj-test/images/menu.png) repeat scroll 0 #feb370 !important;
 }
 
 tr.season_header,
@@ -820,7 +819,7 @@ td.colhead {
 }
 
 .colhead_dark {
-    background-color: #A5FCC5;
+    background-color: #9E7BFF;
     color: #333;
     vertical-align: middle;
     box-shadow: 0px 0px 3px #ddd;
@@ -829,7 +828,7 @@ td.colhead {
 }
 
 .colhead_dark a {
-    color: #369659;
+    color: #b6f4cc;
 
 }
 
@@ -1417,6 +1416,31 @@ tr.row1 {
 
 tr.row2 {
     background-color: #FFFFFF;
+}
+
+.button {
+    min-width: 30px;
+    margin-bottom: 0px;
+    background: rgb(216, 107, 162);
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 6px 8px;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    text-shadow: rgb(0 0 0 / 10%) 0px 1px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    font: 400 13.3333px Arial;
+    appearance: auto;
+}
+
+.button:hover {
+    background: rgb(216, 142, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 button,
